@@ -129,7 +129,6 @@ const Login = () => {
                   >
                     {intl.formatMessage(messages.signinwithplex)}
                   </button>
-                  
                   {settings.currentSettings.localLogin && (
                     <div>
                       <button
