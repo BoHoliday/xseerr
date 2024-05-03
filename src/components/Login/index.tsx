@@ -3,7 +3,6 @@ import ImageFader from '@app/components/Common/ImageFader';
 import PageTitle from '@app/components/Common/PageTitle';
 import LanguagePicker from '@app/components/Layout/LanguagePicker';
 import LocalLogin from '@app/components/Login/LocalLogin';
-import PlexLoginButton from '@app/components/PlexLoginButton';
 import useSettings from '@app/hooks/useSettings';
 import { useUser } from '@app/hooks/useUser';
 import { Transition } from '@headlessui/react';
@@ -130,14 +129,7 @@ const Login = () => {
                   >
                     {intl.formatMessage(messages.signinwithplex)}
                   </button>
-                  <AccordionContent isOpen={openIndexes.includes(0)}>
-                    <div className="px-10 py-8">
-                      <PlexLoginButton
-                        isProcessing={isProcessing}
-                        onAuthToken={(authToken) => setAuthToken(authToken)}
-                      />
-                    </div>
-                  </AccordionContent>
+                  
                   {settings.currentSettings.localLogin && (
                     <div>
                       <button
