@@ -18,7 +18,7 @@ jobs:
       run: |
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag sevenyx/overseerr:latest
+      run: docker build . --file Dockerfile --tag sevenyx/overseerr:master
     
     - name: Docker Push
-      run: docker push sevenyx/overseerr:latest
+      run: docker push sevenyx/overseerr:master
