@@ -126,8 +126,6 @@ const Login = () => {
                     }`}
                     onClick={() => handleClick(0)}
                     disabled={!settings.currentSettings.localLogin}
-                  >
-                    {intl.formatMessage(messages.signinwithplex)}
                   </button>
                   {settings.currentSettings.localLogin && (
                     <div>
