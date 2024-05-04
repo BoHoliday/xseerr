@@ -138,25 +138,6 @@ const Login = () => {
                         </div>
                       </AccordionContent>
                     </div>
-                  <button
-                    className={`w-full cursor-default bg-gray-800 bg-opacity-70 py-2 text-center text-sm font-bold text-gray-400 transition-colors duration-200 focus:outline-none sm:rounded-t-lg ${
-                      openIndexes.includes(0) && 'text-indigo-500'
-                    } ${
-                      settings.currentSettings.localLogin &&
-                      'hover:cursor-pointer hover:bg-gray-700'
-                    }`}
-                    onClick={() => handleClick(0)}
-                    disabled={!settings.currentSettings.localLogin}
-                  >
-                  </button>
-                  <AccordionContent isOpen={openIndexes.includes(0)}>
-                    <div className="px-10 py-8">
-                      <PlexLoginButton
-                        isProcessing={isProcessing}
-                        onAuthToken={(authToken) => setAuthToken(authToken)}
-                      />
-                    </div>
-                  </AccordionContent>
                   )}
                 </>
               )}
