@@ -15,8 +15,8 @@ import useSWR from 'swr';
 
 const messages = defineMessages({
   signin: 'Sign In',
-  signinheader: 'Sign in to continue',
-  signinwithplex: 'Click the button below to sign in',
+  signinheader: 'Click the button below to sign in',
+  signinwithplex: 'Use your Plex account',
   signinwithoverseerr: 'Use your {applicationTitle} account',
 });
 
