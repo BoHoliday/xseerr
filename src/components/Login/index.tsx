@@ -142,11 +142,6 @@ const Login = () => {
                             settings.currentSettings.applicationTitle,
                         })}
                       </button>
-                      <AccordionContent isOpen={openIndexes.includes(1)}>
-                        <div className="px-10 py-8">
-                          <LocalLogin revalidate={revalidate} />
-                        </div>
-                      </AccordionContent>
                     </div>
                   )}
                 </>
