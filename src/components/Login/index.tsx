@@ -114,7 +114,7 @@ const Login = () => {
                 </div>
               </div>
             </Transition>
-            <Accordion single atLeastOne>
+            <Accordion>
               {({ openIndexes, handleClick, AccordionContent }) => (
                 <>
                   <button
