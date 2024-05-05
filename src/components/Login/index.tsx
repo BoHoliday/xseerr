@@ -120,7 +120,7 @@ const Login = () => {
                   {settings.currentSettings.localLogin && (
                     <div>
                       <button
-                        className={`w-full cursor-default bg-gray-800 bg-opacity-70 py-2 text-center text-sm font-bold text-gray-400 transition-colors duration-200 hover:cursor-pointer hover:bg-gray-700 focus:outline-none ${
+                        className={`w-full cursor-default bg-gray-800 bg-opacity-70 py-2 text-center text-sm font-bold text-orange-400 transition-colors duration-200 hover:cursor-pointer hover:bg-gray-700 focus:outline-none ${
                           openIndexes.includes(1)
                             ? 'text-indigo-500'
                             : 'sm:rounded-b-lg'
